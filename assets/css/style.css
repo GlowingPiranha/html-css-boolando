@@ -3,3 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+header {
+  z-index: 1;
+  position: fixed;
+  padding: 20px;
+  color: #fff;
+  background-color: #ff6900;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* HEADER */
+
+.banner {
+  list-style: none;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 600;
+}
+
+.content {
+  vertical-align: middle;
+}
+
+.h-logo {
+
+  width: 20%;
+}
+
+.align-center {
+  align-content: center;
+  text-align: center;
+}
+
+/* WIDHTS */
+
+.w-60 {
+  width: 60px;
+}
+
+.w-25 {
+  width: 25px;
+}
