@@ -5,7 +5,13 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 /* BODY */
@@ -27,6 +33,7 @@ main {
 /* HEADER */
 
 .banner {
+  margin: auto;
   list-style: none;
   max-width: 1400px;
   display: flex;
@@ -40,7 +47,7 @@ main {
 }
 
 .h-logo {
-
+  align-content: center;
   width: 20%;
 }
 
@@ -52,26 +59,41 @@ main {
 /* MAIN */
 
 .card-container {
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 150px;
+  max-width: 1400px;
+
+}
+
+.row {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100% / 4);
+  position: ;
+
+
+
 }
 
 .card {
   z-index: -1;
-  width: 400px;
-  position: absolute;
-  display: inline-block;
-
-
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-img {
+.card-content {}
+
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
+  transition: ease-out 0.2s;
 
 }
 
@@ -79,17 +101,36 @@ img {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.2s;
 }
 
 .card:hover .front-img {
+  display: none;
   opacity: 0;
 }
 
 .card:hover .back-img {
+  display: block;
   opacity: 1;
 
 }
+
+.left-bot {
+  position: absolute;
+  bottom: 30px;
+}
+
+.sml-sqr {
+  align-content: center;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
 
 /* WIDHTS */
 
