@@ -6,7 +6,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,7 +18,9 @@ li {
 /* BODY */
 
 header {
+
   z-index: 1;
+  height: 75px;
   position: fixed;
   padding: 20px;
   color: #fff;
@@ -27,7 +30,16 @@ header {
 }
 
 main {
+  width: 100%;
   margin: 0 10px;
+
+
+}
+
+footer {
+
+  width: 100%;
+
 }
 
 /* HEADER */
@@ -65,7 +77,8 @@ main {
   flex-wrap: wrap;
   padding-top: 150px;
   max-width: 1400px;
-
+  padding-bottom: 200px;
+  border: 1px solid black;
 }
 
 .row {
@@ -73,18 +86,23 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
   width: calc(100% / 4);
-  position: ;
-
-
-
+  position: relative;
+  border: 1px solid black;
 }
 
+
+
+
 .card {
+  width: 350px;
   z-index: -1;
   position: relative;
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
+  border: 1px solid black;
+
 }
 
 .card-content {}
@@ -95,9 +113,13 @@ main {
   object-fit: cover;
   transition: ease-out 0.2s;
 
+
 }
 
+.front-img {}
+
 .back-img {
+  width: auto;
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -115,7 +137,7 @@ main {
 
 }
 
-.left-bot {
+.badges {
   position: absolute;
   bottom: 30px;
 }
@@ -131,6 +153,16 @@ main {
   right: 0px;
 }
 
+/* FOOTER */
+
+.foot {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+
+
+
+}
 
 /* WIDHTS */
 
