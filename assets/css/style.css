@@ -87,6 +87,10 @@ main {
   padding-bottom: 100px;
 }
 
+.flex {
+  display: flex;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -177,37 +181,38 @@ main {
 
 /* FOOTER */
 
-footer {}
+
 
 footer ul {
   display: flex;
   list-style-type: none;
 }
 
-
 footer ul li {
   margin-right: 10px;
 }
+
 
 footer a {
   text-decoration: none;
   color: #fff;
 }
 
-.footer {
-  width: 100%;
-  border: 1px solid black;
+footer {
+  height: 100px;
 }
 
-.legals {
-  width: 100%;
-  display: flex;
+.legals li {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-.socials {
-  width: 100%;
-  margin: 5px;
+.font-15 {
+  font-size: 15px;
 }
+
+
 
 
 /* HEIGHTS */
