@@ -46,25 +46,33 @@ footer {
 
 }
 
-/* HEADER */
+/* LAYOUT */
 
 .container {
   margin: 0 auto;
   max-width: 1400px;
-  display: flex;
-}
-
-.col {
-  width: calc(100% / 3);
   border: 1px solid black;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.col {
+  width: calc(100% / 3 -20px);
+}
+
+
+.boolean-logo {
+  width: 200px;
+  border: 1px solid black;
 }
 
 .links {
+  border: 1px solid black;
   text-decoration: none;
 }
 
@@ -78,6 +86,14 @@ footer {
 
 .text-right {
   text-align: right;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 /* MAIN */
